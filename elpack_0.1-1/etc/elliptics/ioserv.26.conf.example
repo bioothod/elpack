@@ -1,0 +1,352 @@
+{
+	"logger": {
+		"frontends": [
+			{
+				"formatter": {
+					"type": "string",
+					"pattern": "%(timestamp)s %(request_id)s/%(lwp)s/%(pid)s %(severity)s: %(message)s %(...L)s"
+				},
+				"sink": {
+					"type": "files",
+					"path": "/home/admin/elliptics/log/ioserv.log",
+					"autoflush": true,
+					"rotation": {
+						"move": 0
+					}
+				}
+			}
+		],
+		"level": "info"
+	},
+	"options": {
+		"join": true,
+		"flags": 4,
+		"remote": [
+			"127.0.0.1:1025:2"
+		],
+		"address": [
+			"127.0.0.1:1025:2-0"
+		],
+		"wait_timeout": 60,
+		"check_timeout": 60,
+		"nonblocking_io_thread_num": 32,
+		"io_thread_num": 32,
+		"net_thread_num": 8,
+		"daemon": false,
+		"auth_cookie": "!!!____!!!!____!!!",
+		"monitor": {
+			"port": 20000,
+			"call_tree_timeout": 0
+		}
+	},
+	"backends": [
+		{
+			"backend_id": 1,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.1/elliptics/history",
+			"data": "/mnt/ell.1/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 1000000,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 2,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.2/elliptics/history",
+			"data": "/mnt/ell.2/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 3,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.3/elliptics/history",
+			"data": "/mnt/ell.3/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 4,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.4/elliptics/history",
+			"data": "/mnt/ell.4/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 5,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.5/elliptics/history",
+			"data": "/mnt/ell.5/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 6,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.6/elliptics/history",
+			"data": "/mnt/ell.6/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 7,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.7/elliptics/history",
+			"data": "/mnt/ell.7/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 8,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.8/elliptics/history",
+			"data": "/mnt/ell.8/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 9,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.9/elliptics/history",
+			"data": "/mnt/ell.9/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 10,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.10/elliptics/history",
+			"data": "/mnt/ell.10/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 11,
+			"type": "blob",
+			"group": 21,
+			"history": "/mnt/ell.11/elliptics/history",
+			"data": "/mnt/ell.11/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 12,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.12/elliptics/history",
+			"data": "/mnt/ell.12/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 13,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.13/elliptics/history",
+			"data": "/mnt/ell.13/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 14,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.14/elliptics/history",
+			"data": "/mnt/ell.14/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 15,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.15/elliptics/history",
+			"data": "/mnt/ell.15/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 16,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.16/elliptics/history",
+			"data": "/mnt/ell.16/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 17,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.17/elliptics/history",
+			"data": "/mnt/ell.17/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 18,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.18/elliptics/history",
+			"data": "/mnt/ell.18/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 19,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.19/elliptics/history",
+			"data": "/mnt/ell.19/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 20,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.20/elliptics/history",
+			"data": "/mnt/ell.20/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 21,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.21/elliptics/history",
+			"data": "/mnt/ell.21/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		},
+		{
+			"backend_id": 22,
+			"type": "blob",
+			"group": 22,
+			"history": "/mnt/ell.22/elliptics/history",
+			"data": "/mnt/ell.22/elliptics/data/data",
+			"sync": -1,
+			"blob_flags": 0,
+			"blob_size": "20G",
+			"records_in_blob": 0,
+			"blob_size_limit": "",
+			"defrag_percentage": 10,
+			"periodic_timeout": 0
+		}
+	]
+}

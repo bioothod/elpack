@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	for file in /etc/sysctl.d/*.conf; do
+    		sysctl -ep $file 
+	done
+	;;
+esac    
+
+exit 0

@@ -1,0 +1,21 @@
+/home/admin/elliptics/log/*.log /srv/elliptics/log/*.log /var/log/elliptics/*.log
+{
+	daily
+	maxsize 2G
+	missingok
+	copytruncate
+	compress
+	dateext
+	dateformat -%Y%m%d-%s
+	rotate 60
+}
+/home/admin/elliptics/log/*.fail /srv/elliptics/log/*.fail /var/log/elliptics/*.log
+{
+        daily
+        missingok
+        copytruncate
+        compress
+        dateext
+        dateformat -%Y%m%d-%s
+        rotate 30
+}

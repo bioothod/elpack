@@ -1,0 +1,11 @@
+Package: elpack
+Version: 0.1-1
+Section: base
+Priority: optional
+Architecture: all
+Depends: logrotate (>= 3.5)
+Maintainer: Mega Crab <you@email.com>
+Description: Configs for reverbrain proj
+ When you need some sunshine, just run this
+ small program!
+ instruct: http://ubuntuforums.org/showthread.php?t=910717

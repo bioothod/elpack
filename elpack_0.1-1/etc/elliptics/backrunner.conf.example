@@ -1,0 +1,31 @@
+{
+	"elliptics": {
+		"log-file": "/mnt/elliptics/log/backrunner.log",
+		"log-level": "info",
+		"log-prefix": "backrunner: ",
+		"remote": [
+			"127.0.0.1:1025:2"
+		],
+		"metadata-groups": [12,21]
+	},
+	"proxy": {
+		"address": "0.0.0.0:80",
+		"idle-timeout": 60,
+		"free-space-ratio-soft": 0.4,
+		"free-space-ratio-hard": 0.25,
+		"bucket-update-interval": 300,
+		"bucket-stat-update-interval": 30,
+		"redirect-port": 8080,
+		"redirect-token": "secure redirect token",
+		"redirect-signature-timeout": 60,
+		"redirect-root": "/mnt",
+		"headers": {
+			"Access-Control-Allow-Origin": "*"
+		},
+                "defrag-free-space-limit": 0.4,
+                "defrag-removed-space-limit": 0.1,
+                "defrag-max-buckets": 3,
+                "defrag-max-backends-per-server": 3,
+		"root": "/mnt/elliptics/root"
+	}
+}

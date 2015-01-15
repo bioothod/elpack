@@ -1,0 +1,11 @@
+/var/log/supervisor/*.log
+{
+	weekly
+	maxsize 100M
+	missingok
+	copytruncate
+	compress
+	dateext
+	dateformat -%Y%m%d
+	rotate 60
+}
