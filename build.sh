@@ -12,4 +12,4 @@ git add *
 
 git commit -m "New version 0.${vn}"
 
-#git push
+git push
