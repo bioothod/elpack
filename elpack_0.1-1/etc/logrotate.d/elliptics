@@ -13,7 +13,6 @@
 {
         daily
         missingok
-        copytruncate
         compress
         dateext
         dateformat -%Y%m%d-%s
