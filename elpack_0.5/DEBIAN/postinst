@@ -8,8 +8,7 @@ case "$1" in
     		sysctl -ep $file 
 	done
 	curl http://repo.reverbrain.com/REVERBRAIN.GPG | apt-key add -
-	sed -ie "s/precise/`lsb_release -cs`/g" /etc/apt/sources.list.d/reverbrain.list
-	apt-get update && apt-get install elliptics
+	sed -e "s/precise/`lsb_release -cs`/g" -i /etc/apt/sources.list.d/reverbrain.list
 	;;
 esac    
 
