@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	for file in /etc/sysctl.d/*.conf; do
+    		sysctl -ep $file 
+	done
+	curl http://repo.reverbrain.com/REVERBRAIN.GPG | apt-key add -
+	sed -ie "s/precise/`lsb_release -cs`/g" /etc/apt/sources.list.d/reverbrain.list
+	apt-get update && apt-get install elliptics
+	;;
+esac    
+
+exit 0
