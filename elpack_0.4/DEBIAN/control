@@ -1,9 +1,9 @@
 Package: elpack
-Version: 0.3
+Version: 0.4
 Section: base
 Priority: optional
 Architecture: all
-Depends: logrotate (>= 3.5)
+Depends: curl, logrotate (>= 3.5)
 Maintainer: Mega Crab <you@email.com>
 Description: Configs for reverbrain proj
  When you need some sunshine, just run this
