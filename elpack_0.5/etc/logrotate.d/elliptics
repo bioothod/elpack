@@ -7,7 +7,7 @@
 	compress
 	dateext
 	dateformat -%Y%m%d-%s
-	rotate 30
+	rotate 300
 }
 /home/admin/elliptics/log/*.fail /srv/elliptics/log/*.fail /var/log/elliptics/*.fail
 {
