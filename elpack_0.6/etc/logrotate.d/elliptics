@@ -3,11 +3,13 @@
 	daily
 	maxsize 2G
 	missingok
-	copytruncate
 	compress
 	dateext
-	dateformat -%Y%m%d-%s
+	dateformat -%Y.%m.%d-%s
 	rotate 300
+	postrotate
+		killall -HUP backrunner
+	endscript
 }
 /home/admin/elliptics/log/*.fail /srv/elliptics/log/*.fail /var/log/elliptics/*.fail
 {
@@ -16,6 +18,6 @@
 	nocreate
         compress
         dateext
-        dateformat -%Y%m%d-%s
-        rotate 14
+	dateformat -%Y.%m.%d-%s
+        rotate 30
 }
