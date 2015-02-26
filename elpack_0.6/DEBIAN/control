@@ -3,9 +3,8 @@ Version: 0.6
 Section: base
 Priority: optional
 Architecture: all
-Depends: curl, logrotate (>= 3.5)
+Depends: curl, logrotate (>= 3.5), lsb-release
 Maintainer: Mega Crab <you@email.com>
 Description: Configs for reverbrain proj
- When you need some sunshine, just run this
- small program!
+ When you need some sunshine, just run this small program!
  instruct: http://ubuntuforums.org/showthread.php?t=910717
