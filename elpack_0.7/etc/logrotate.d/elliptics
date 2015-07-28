@@ -3,6 +3,7 @@
 	daily
 	maxsize 2G
 	missingok
+	nocreate
 	compress
 	dateext
 	dateformat -%Y.%m.%d-%s
